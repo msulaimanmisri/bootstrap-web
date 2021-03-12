@@ -10,7 +10,7 @@
 <body class="bg-light bg-gradient">
 
     <!-- Nav start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand order-1 mr-0 fs-6" href="https://github.com/msulaimanmisri" target="_blank">Powered by Sulaiman Misri</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,22 @@
         </div>
     </nav>
 
-    <!-- Nav end -->
+    <!-- Jumbotron -->
+    <div class="container-fluid bg-info py-5">
+        <div class="container text-white text-sm-center py-5">
+            <h1 class="display-2 fw-bold"> Full Stack Conference 2021 </h1>
+            <p class="lead fw-normal">A one day conference about all thing Front-end and Back-end!</p>
 
-    <div class="container pt-5 mt-5">
+            <div class="mt-5 col-sm-12">
+                <a href="#" class="btn btn-primary btn-lg m-2"> Register Now </a>
+                <a href="#speakers" class="btn btn-outline-primary btn-lg m-2"> See Speakers </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div class="container pt-3 mt-5">
         <div class="row">
             <div class="col-sm p-4">
                 <h3 class="mb-4">About Full Stack Conf</h3>
@@ -59,16 +72,24 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- Speakers -->
+    <div class="container" id="speakers">
         <h1 class="display-2 fw-bold text-center my-5">Speaker</h1>
         <p class="lead fw-normal text-center"> Content here </p>
     </div>
 
+    <!-- Schedule -->
     <div class="container">
         <h1 class="display-2 fw-bold text-center my-5"> Schedule </h1>
         <p class="lead fw-normal text-center"> Content here </p>
     </div>
 
+    <!-- CTA -->
+    <div class="container text-center">
+        <a href="" class="btn btn-outline-info btn-lg my-5 "> Register Now </a>
+    </div>
+
+    <!-- Form -->
     <hr class="my-5">
     <div class="container">
         <div class="row py-4 text-muted">
@@ -81,9 +102,43 @@
                 <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
                 <div class="input-group">
                 <input type="text" class="form-control" placeholder="Enter your email info" aria-label="Enter your email info" aria-describedby="button-addon2">
-                <button class="btn btn-primary" type="button" id="button-addon2">Sign up</button>
+                <button class="btn btn-primary shadow" type="button" id="button-addon2">Sign up</button>
                 </div>
               </div>
+        </div>
+
+        <!-- footer -->
+        <div class="row py-3">
+            <div class="col-md-7">
+                <ul class="nav">
+
+                    <li class="nav-item">
+                      <a class="nav-link text-muted" aria-current="" href="#">Community</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link text-muted" href="#">Tracks</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="btn-group dropup my-auto">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Other Conferences
+                            </button>
+                            <ul class="dropdown-menu">
+                              <!-- Dropdown menu links -->
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </li>
+
+                  </ul>
+            </div>
+            <div class="col-md text-md-end text-muted my-auto">
+            <small>&copy; 2021 Full Stack Conf &amp; Sulaiman Misri</small>
+            </div>
         </div>
     </div>
 
