@@ -10,9 +10,9 @@
 <body class="bg-light bg-gradient" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
     <!-- Nav start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top py-3">
         <div class="container">
-            <a class="navbar-brand order-1 mr-0 fs-6" href="https://github.com/msulaimanmisri" target="_blank">Powered by Sulaiman Misri</a>
+            <a class="btn btn-outline-light order-1 mr-0 fs-6" href="https://github.com/msulaimanmisri" target="_blank">Visit my Github</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -260,17 +260,140 @@
     <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="register" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-info">
             <h5 class="modal-title" id="register"> Register Full Stack Conference 2021 </h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-            ...
+            <div class="modal-body p-4">
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Hurry up!</strong> Early bird access ends in two days!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+
+            <form action="" method="POST" class="">
+
+                <div class="form-floating mb-3 form-group">
+                    <input type="name" class="form-control" id="name" placeholder="name@example.com" required>
+                    <label for="name">Full Name</label>
+                    <div class="invalid-feedback">
+                        Please provide your name.
+                    </div>
+                </div>
+
+                <div class="form-floating form-group">
+                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                    <label for="email">Email</label>
+                    <div class="invalid-feedback">
+                        Please provide your email.
+                    </div>
+                </div>
+
+                <div class="form-floating form-group mt-3">
+                    <select class=" form-control form-select" id="role" aria-label="Floating label select example">
+                        <option value="full stack js developer">Full Stack Developer</option>
+                        <option value="front end developer">Front End Developer</option>
+                        <option value="back end developer">Back End Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="student">Student</option> 
+                    </select>
+                      <label for="role">Job Role</label>
+                </div>
+            </form>
+
+            <section class="my-3"></section>
+
+            <h4 class="mb-3">Which topics interest you most?</h3>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fullstack">
+                <label class="form-check-label" for="fullstack">
+                  Full Stack Development
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="frontend">
+                <label class="form-check-label" for="frontend">
+                    Front End Development
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="backend">
+                <label class="form-check-label" for="backend">
+                    Back End Development
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="product">
+                <label class="form-check-label" for="product">
+                    Product Design
+                </label>
+              </div>
+
+            <hr class="my-4">
+
+            <h4 class="py-2">Payment Info</h4>
+            
+            <div class="row g-2">
+                <div class="col-lg-6">
+                    <label for="cardNo" class="form-label">Enter your card number</label>
+                    <input type="text" id="cardNo" class="form-control">
+                </div>
+
+                <div class="col">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input type="text" id="cvc" class="form-control">
+                </div>
+
+                <div class="col">
+                    <label for="zip" class="form-label">ZIP Code</label>
+                    <input type="text" id="zip" class="form-control">
+                </div>
             </div>
+
+            <!-- Expired -->
+            <div class="row g-2 pt-2 mb-3">
+                <div class="col-lg-6">
+                    <label for="expired" class="form-label">Expired day</label>
+                    <select class="form-control form-select" id="expired">
+                        <option value="1">1 - January</option>
+                        <option value="2">2 - February</option>
+                        <option value="3">3 - March</option>
+                        <option value="4">4 - April</option>
+                        <option value="5">5 - May</option>
+                        <option value="6">6 - June</option>
+                        <option value="7">7 - July</option>
+                        <option value="8">8 - August</option>
+                        <option value="9">9 - September</option>
+                        <option value="10">10 - October</option>
+                        <option value="11">11 - November</option> 
+                        <option value="12">12 - December</option>
+                      </select> 
+                </div>
+
+                <div class="col">
+                    <label for="year" class="form-label">Year</label>
+                        <select class="form-control form-select" id="year">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>  
+                </div>
+            </div>
+
+            <!-- CTA Register Form -->
+            <section class="my-3 mb-5"></section>
+
+            <button class="btn btn-primary"> Register Now </button>
+
+
+           
+            
         </div>
         </div>
     </div>
